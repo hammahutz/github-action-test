@@ -37,6 +37,5 @@ jobs:
 
     steps:
     - name: Dump github context
-      run:  echo "${{ github.event.repository.name }}",
-            echo "${{ steps.deployment.outputs.page_url }}"
+      run:  echo "${{ steps.deployment.outputs.page_url }}"
       shell: bash
